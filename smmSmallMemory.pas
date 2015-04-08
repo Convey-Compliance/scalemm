@@ -596,6 +596,7 @@ begin
 end;
 *)
 
+{$WARNINGS OFF}
 procedure TSmallMemBlock.ThreadFreeMem(aMemoryItem: PSmallMemHeader);
 var
   fb : PSmallMemBlock;
@@ -678,6 +679,7 @@ begin
 
   Unlock;
 end;
+{$WARNINGS ON}
 
 { TSmallMemBlockList }
 
